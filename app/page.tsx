@@ -13,7 +13,7 @@ export default function Home() {
       <HeroSection />
       {/* Collage of Gemini Images */}
       <SectionImage 
-        src="/images/Gemini_Generated_Image_75n8a675n8a675n.png"
+        src="/images/Gemini_Generated_Image_75n8a675n8a675n8.png"
         alt="Ethereum community collage"
         caption="The Human Story of Ethereum - Real people building the future of decentralized technology"
       />
