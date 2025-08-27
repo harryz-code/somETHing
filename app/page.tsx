@@ -1,6 +1,7 @@
 import { HeroSection } from "@/components/hero-section"
 import { SectionImage } from "@/components/section-image"
 import { ProjectOverview } from "@/components/project-overview"
+import { BuilderProfiles } from "@/components/builder-profiles"
 
 export default function Home() {
   return (
@@ -29,6 +30,7 @@ export default function Home() {
         caption="every breakthrough starts with somETHing..."
       />
       <ProjectOverview />
+      <BuilderProfiles />
       <div className="container mx-auto px-4 py-16">
         <h1 className="text-4xl font-bold text-center">
           somETHing - Component Test
