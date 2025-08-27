@@ -1,9 +1,39 @@
-export default function Page() {
+import { HeroSection } from "@/components/hero-section"
+import { SectionImage } from "@/components/section-image"
+import { ProjectOverview } from "@/components/project-overview"
+import { BuilderProfiles } from "@/components/builder-profiles"
+import { BuilderImages } from "@/components/builder-images"
+import { AudienceSection } from "@/components/audience-section"
+import { DistributionChannels } from "@/components/distribution-profiles"
+import { FundingBreakdown } from "@/components/funding-breakdown"
+
+export default function Home() {
   return (
-    <div>
-      <h1>Test Page - Working!</h1>
-      <p>If you can see this, the server is working!</p>
-      <p>Deployed at: {new Date().toLocaleString()}</p>
-    </div>
+    <main className="min-h-screen">
+      <HeroSection />
+      {/* Collage of Gemini Images */}
+      <SectionImage 
+        src="/images/Gemini_Generated_Image_75n8a675n8a675n.png"
+        alt="Ethereum community collage"
+        caption="The Human Story of Ethereum - Real people building the future of decentralized technology"
+      />
+      <ProjectOverview />
+      <BuilderProfiles />
+      <BuilderImages />
+      <AudienceSection />
+      <DistributionChannels />
+      <FundingBreakdown />
+      {/* Believe in somETHing */}
+      <section className="py-16 bg-card">
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="text-3xl font-bold mb-4">
+            Believe in <span className="text-primary">somETHing</span>
+          </h2>
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            Join us in telling the human stories that make Ethereum more than just technology—it's a movement of builders, dreamers, and innovators.
+          </p>
+        </div>
+      </section>
+    </main>
   )
 }
