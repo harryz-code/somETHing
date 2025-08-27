@@ -10,46 +10,17 @@ import { FundingBreakdown } from "@/components/funding-breakdown"
 export default function Home() {
   return (
     <main className="min-h-screen">
-      <HeroSection />
-      {/* Collage of Gemini Images */}
-      <SectionImage 
-        layout="collage"
-        images={[
-          {
-            src: "/images/Gemini_Generated_Image_75n8a675n8a675n8.png",
-            alt: "Builder working at desk",
-            caption: "it always starts with a builder..."
-          },
-          {
-            src: "/images/Gemini_Generated_Image_csf87ncsf87ncsf8.png",
-            alt: "Community gathering",
-            caption: "...with a community..."
-          },
-          {
-            src: "/images/Gemini_Generated_Image_ktu6g9ktu6g9ktu6.png",
-            alt: "World-changing impact",
-            caption: "...that changes the world."
-          }
-        ]}
-        caption="every breakthrough starts with somETHING..."
-      />
-      <ProjectOverview />
-      <BuilderProfiles />
-      <BuilderImages />
-      <AudienceSection />
-      <DistributionChannels />
-      <FundingBreakdown />
-      {/* Believe in somETHing */}
-      <section className="py-16 bg-card">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold mb-4">
-            Believe in <span className="text-primary">somETHing</span>
-          </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Join us in telling the human stories that make Ethereum more than just technology—it's a movement of builders, dreamers, and innovators.
-          </p>
+      <div className="container mx-auto px-4 py-16">
+        <h1 className="text-4xl font-bold text-center">
+          somETHing - Vercel Test
+        </h1>
+        <p className="text-center mt-4">
+          If you can see this, Vercel deployment is working!
+        </p>
+        <div className="mt-8 text-center">
+          <p>This is a test to see if Vercel can serve the page correctly.</p>
         </div>
-      </section>
+      </div>
     </main>
   )
 }
