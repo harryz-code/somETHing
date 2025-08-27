@@ -13,9 +13,25 @@ export default function Home() {
       <HeroSection />
       {/* Collage of Gemini Images */}
       <SectionImage 
-        src="/images/Gemini_Generated_Image_75n8a675n8a675n8.png"
-        alt="Ethereum community collage"
-        caption="The Human Story of Ethereum - Real people building the future of decentralized technology"
+        layout="collage"
+        images={[
+          {
+            src: "/images/Gemini_Generated_Image_75n8a675n8a675n8.png",
+            alt: "Builder working at desk",
+            caption: "it always starts with a builder..."
+          },
+          {
+            src: "/images/Gemini_Generated_Image_csf87ncsf87ncsf8.png",
+            alt: "Community gathering",
+            caption: "...with a community..."
+          },
+          {
+            src: "/images/Gemini_Generated_Image_ktu6g9ktu6g9ktu6.png",
+            alt: "World-changing impact",
+            caption: "...that changes the world."
+          }
+        ]}
+        caption="every breakthrough starts with somETHING..."
       />
       <ProjectOverview />
       <BuilderProfiles />
