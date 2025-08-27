@@ -39,14 +39,14 @@ export default function Home() {
       <AudienceSection />
       <DistributionChannels />
       <FundingBreakdown />
-      {/* Believe in somETHing */}
+      {/* believe in somETHing */}
       <section className="py-16 bg-card">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-4">
-            Believe in <span className="text-primary">somETHing</span>
+            believe in <span className="text-primary">somETHing</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Join us in telling the human stories that make Ethereum more than just technology—it's a movement of builders, dreamers, and innovators.
+            thank you for reading through the proposal :)
           </p>
         </div>
       </section>
