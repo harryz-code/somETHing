@@ -4,6 +4,7 @@ import { ProjectOverview } from "@/components/project-overview"
 import { BuilderProfiles } from "@/components/builder-profiles"
 import { BuilderImages } from "@/components/builder-images"
 import { AudienceSection } from "@/components/audience-section"
+import { DistributionChannels } from "@/components/distribution-profiles"
 
 export default function Home() {
   return (
@@ -35,6 +36,7 @@ export default function Home() {
       <BuilderProfiles />
       <BuilderImages />
       <AudienceSection />
+      <DistributionChannels />
       <div className="container mx-auto px-4 py-16">
         <h1 className="text-4xl font-bold text-center">
           somETHing - Component Test
