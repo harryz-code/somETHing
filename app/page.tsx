@@ -2,6 +2,7 @@ import { HeroSection } from "@/components/hero-section"
 import { SectionImage } from "@/components/section-image"
 import { ProjectOverview } from "@/components/project-overview"
 import { BuilderProfiles } from "@/components/builder-profiles"
+import { BuilderImages } from "@/components/builder-images"
 
 export default function Home() {
   return (
@@ -31,6 +32,7 @@ export default function Home() {
       />
       <ProjectOverview />
       <BuilderProfiles />
+      <BuilderImages />
       <div className="container mx-auto px-4 py-16">
         <h1 className="text-4xl font-bold text-center">
           somETHing - Component Test
