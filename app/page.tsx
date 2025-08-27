@@ -5,6 +5,7 @@ import { BuilderProfiles } from "@/components/builder-profiles"
 import { BuilderImages } from "@/components/builder-images"
 import { AudienceSection } from "@/components/audience-section"
 import { DistributionChannels } from "@/components/distribution-profiles"
+import { FundingBreakdown } from "@/components/funding-breakdown"
 
 export default function Home() {
   return (
@@ -37,14 +38,18 @@ export default function Home() {
       <BuilderImages />
       <AudienceSection />
       <DistributionChannels />
-      <div className="container mx-auto px-4 py-16">
-        <h1 className="text-4xl font-bold text-center">
-          somETHing - Component Test
-        </h1>
-        <p className="text-center mt-4">
-          Testing components one by one...
-        </p>
-      </div>
+      <FundingBreakdown />
+      {/* Believe in somETHing */}
+      <section className="py-16 bg-card">
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="text-3xl font-bold mb-4">
+            Believe in <span className="text-primary">somETHing</span>
+          </h2>
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            Join us in telling the human stories that make Ethereum more than just technology—it's a movement of builders, dreamers, and innovators.
+          </p>
+        </div>
+      </section>
     </main>
   )
 }
