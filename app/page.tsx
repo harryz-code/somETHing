@@ -1,9 +1,32 @@
 import { HeroSection } from "@/components/hero-section"
+import { SectionImage } from "@/components/section-image"
 
 export default function Home() {
   return (
     <main className="min-h-screen">
       <HeroSection />
+      {/* Collage of Gemini Images */}
+      <SectionImage 
+        layout="collage"
+        images={[
+          {
+            src: "/images/Gemini_Generated_Image_75n8a675n8a675n8.png",
+            alt: "Builder working at desk",
+            caption: "it always starts with a builder..."
+          },
+          {
+            src: "/images/Gemini_Generated_Image_csf87ncsf87ncsf8.png",
+            alt: "Community gathering",
+            caption: "...with a community..."
+          },
+          {
+            src: "/images/Gemini_Generated_Image_ktu6g9ktu6g9ktu6.png",
+            alt: "World-changing impact",
+            caption: "...that changes the world."
+          }
+        ]}
+        caption="every breakthrough starts with somETHING..."
+      />
       <div className="container mx-auto px-4 py-16">
         <h1 className="text-4xl font-bold text-center">
           somETHing - Component Test
