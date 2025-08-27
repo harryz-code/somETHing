@@ -26,7 +26,7 @@ export default function Home() {
             caption: "...that changes the world."
           }
         ]}
-        caption="every breakthrough starts with somETHING..."
+        caption="every breakthrough starts with somETHing..."
       />
       <ProjectOverview />
       <div className="container mx-auto px-4 py-16">
